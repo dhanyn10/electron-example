@@ -1,21 +1,16 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "open-all-link-to-default-browser",
+  "description": "Minimal electron application to open any link to default browser",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Dhany Nurdiansyah",
+  "license": "MIT",
   "devDependencies": {
     "electron": "~1.8.2"
   }
