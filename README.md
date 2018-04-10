@@ -1,4 +1,13 @@
 # About
-This is very minimal application made with Electron Quick Start.  
+This is collection of very minimal application made with Electron Quick Start to test Electron function and features.
   
-The place for several application to test each features in Electron thats looks difficult.
+# How to Use
+Simply clone this repository, move to any directory you needed to test. then run:  
+1. install all required package
+```
+npm install
+```
+2. start apps
+```
+npm start
+```
