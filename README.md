@@ -1,5 +1,5 @@
 # About
-This is collection of very minimal application made with Electron Quick Start to test Electron function and features.
+This is collection of very minimal application made with Electron Quick Start to test Electron Apps.
   
 # How to Use
 Simply clone this repository, move to any directory you needed to test. then run:  
