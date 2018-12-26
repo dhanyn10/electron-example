@@ -1,20 +1,20 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-with-bootbox",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/dhanyn10/electron-example",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
     "tutorial",
-    "demo"
+    "demo",
+    "bootbox",
+    "bootstrap",
+    "jquery"
   ],
-  "author": "GitHub",
+  "author": "Dhany Nurdiansyah",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "1.8.8"
