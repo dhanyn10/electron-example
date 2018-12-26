@@ -5,6 +5,7 @@
   "scripts": {
     "start": "electron ."
   },
+  "repository": "https://github.com/dhanyn10/electron-example",
   "keywords": [
     "tutorial",
     "demo"
