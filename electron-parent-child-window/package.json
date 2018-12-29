@@ -1,0 +1,23 @@
+{
+  "name": "electron-parent-child-window",
+  "version": "1.0.0",
+  "description": "test electron parent child window",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/dhanyn10/electron-example",
+  "keywords": [
+    "tutorial",
+    "demo",
+    "modal"
+  ],
+  "author": "Dhany Nurdiansyah",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.7"
+  },
+  "dependencies": {
+    "electron-modal": "^1.0.0"
+  }
+}
