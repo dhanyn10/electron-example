@@ -21,7 +21,16 @@ function createWindow () {
      * then this child window will also closed at the same time
      * --------------------------------------------------------
      */
-    parent: mainWindow
+    parent: mainWindow,
+    /**
+     * -----------------------------------------------------------
+     * setting below set that this childwindow will set as modal
+     * for it's parent window. With this settings, user cannot
+     * access to parent window when this childWindow isn't closed
+     * yet.
+     * -----------------------------------------------------------
+     */
+    modal: true
   })
 
   //load the specific html for related variable
