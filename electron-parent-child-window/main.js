@@ -9,7 +9,17 @@ let childWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600})
-  childWindow = new BrowserWindow({width: 400, height: 200})
+  childWindow = new BrowserWindow({
+    width: 400,
+    height: 200,
+    /**
+     * --------------------------------------------------------
+     * settings below set that when user close the mainWindow
+     * then this child window will also closed at the same time
+     * --------------------------------------------------------
+     */
+    parent: mainWindow
+  })
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
