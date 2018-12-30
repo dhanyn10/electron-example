@@ -8,7 +8,10 @@ let childWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600
+  })
   childWindow = new BrowserWindow({
     width: 400,
     height: 200,
@@ -21,9 +24,8 @@ function createWindow () {
     parent: mainWindow
   })
 
-  // and load the index.html of the app.
+  //load the specific html for related variable
   mainWindow.loadFile('index.html')
-
   childWindow.loadFile('modal.html')
 
   // Open the DevTools.
