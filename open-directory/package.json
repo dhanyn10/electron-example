@@ -12,6 +12,6 @@
   "author": "Dhany Nurdiansyah",
   "license": "MIT",
   "devDependencies": {
-    "electron": "4.1.4"
+    "electron": "4.2.0"
   }
 }
