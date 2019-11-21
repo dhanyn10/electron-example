@@ -17,7 +17,7 @@
   "author": "Dhany Nurdiansyah",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "5.0.1"
+    "electron": "7.1.2"
   },
   "dependencies": {
     "bootbox": "^4.4.0",
