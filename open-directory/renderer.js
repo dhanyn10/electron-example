@@ -9,9 +9,10 @@ btn.addEventListener('click', ()=>{
     //show open directory window
     dialog.showOpenDialog({
         properties: ['openDirectory']
-    },
-    //display folder position result in absolute path with alert
-    (folderposition)=>{
-        alert(folderposition);
+    }).then( result => {
+        //insert result of filepath to #location
+        console.log(result.filePaths)
+    }).catch( error => {
+        console.error(error)
     });
 })
