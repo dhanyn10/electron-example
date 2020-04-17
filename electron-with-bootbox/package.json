@@ -20,7 +20,7 @@
     "electron": "5.0.1"
   },
   "dependencies": {
-    "bootbox": "^4.4.0",
+    "bootbox": "^5.4.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.0.0"
   }
