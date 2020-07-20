@@ -24,9 +24,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: change directory to bootbox
-      run: cd bootbox
     - name: install package
+      working-directory: ./bootbox
       run: npm install
     - name: run build testing
       working-directory: ./bootbox
