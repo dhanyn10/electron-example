@@ -6,7 +6,6 @@
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
-    "pack": "electron-builder --dir='bootbox'",
     "dist": "electron-builder",
     "build-test": "electron-builder --publish=never"
   },
