@@ -24,6 +24,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd bootbox
-    - run: npm install electron-builder
-    - run: "electron-builder --publish=never"
+    - name: change directory to bootbox
+      run: cd bootbox
+    - name: install package
+    - run: npm install
+    - name: run build testing
+    - run: npm run build-test
