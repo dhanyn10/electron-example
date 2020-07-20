@@ -4,8 +4,10 @@
 name: open-all-link-to-default-browser
 
 on:
+  push:
+    branches: master
   pull_request:
-    branches: [ master ]
+    branches: master
 
 jobs:
   build:
