@@ -27,6 +27,6 @@ jobs:
     - name: change directory to bootbox
       run: cd bootbox
     - name: install package
-    - run: npm install
+      run: npm install
     - name: run build testing
-    - run: npm run build-test
+      run: npm run build-test
