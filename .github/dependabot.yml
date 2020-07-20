@@ -1,8 +1,12 @@
 version: 2
 updates:
 - package-ecosystem: npm
+  directory: "/bootbox"
+  directory: "/open-all-link-to-default-browser"
   directory: "/open-directory"
   directory: "/parent-child-window"
+  directory: "/shelljs-command"
+  directory: "/vue-bootstrap"
   schedule:
     interval: daily
     time: "00:00"
