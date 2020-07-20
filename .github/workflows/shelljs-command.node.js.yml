@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [13.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -26,7 +26,3 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: cd shelljs-command
     - run: npm install
-    - name: Electron Builder Action
-      uses: samuelmeuli/action-electron-builder@v1.6.0
-      with:
-        github_token: 5ca3fca041316564bf931b142a641b9dafc91e6e
