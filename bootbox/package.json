@@ -20,7 +20,8 @@
   "author": "Dhany Nurdiansyah",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "5.0.1"
+    "electron": "5.0.1",
+    "electron-builder": "22.3.2"
   },
   "dependencies": {
     "bootbox": "^5.4.0",
