@@ -6,8 +6,9 @@
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "pack": "electron-builder --dir=bootbox",
+    "dist": "electron-builder",
+    "build-test": "electron-builder --publish=never"
   },
   "repository": "https://github.com/dhanyn10/electron-example",
   "keywords": [
