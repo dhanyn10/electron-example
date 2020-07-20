@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <link rel="stylesheet" href="style.css">
+        <title>Shell Command</title>
+    </head>
+    <body>
+        
+        <!-- You can also require other files to run in this process -->
+        <button id="hello" class="block">hello</button>
+        <button id="create-myfolder" class="block">create myfolder</button>
+        <script src="./renderer.js"></script>
+    </body>
+</html>
