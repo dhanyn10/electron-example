@@ -7,7 +7,7 @@
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
+    "dist": "electron-builder"
   },
   "repository": "https://github.com/dhanyn10/electron-example",
   "keywords": [
@@ -21,7 +21,7 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "5.0.1",
-    "electron-builder": "22.3.2"
+    "electron-builder": "^22.7.0"
   },
   "dependencies": {
     "bootbox": "^5.4.0",
