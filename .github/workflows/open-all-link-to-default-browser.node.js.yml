@@ -24,5 +24,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd open-all-link-to-default-browser
-    - run: npm install
+    - name: install package
+      working-directory: ./open-all-link-to-default-browser
+      run: npm install
+    - name: run build testing
+      working-directory: ./open-all-link-to-default-browser
+      run: npm run build-test
