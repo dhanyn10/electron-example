@@ -10,6 +10,7 @@
     "dist": "electron-builder",
     "build-test": "electron-builder --publish=never"
   },
+  "repository": "https://github.com/dhanyn10/electron-example",
   "keywords": [
     "tutorial",
     "demo"

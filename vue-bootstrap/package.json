@@ -11,6 +11,7 @@
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
+  "repository": "https://github.com/dhanyn10/electron-example",
   "main": "background.js",
   "dependencies": {
     "bootstrap": "^4.5.0",
