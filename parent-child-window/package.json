@@ -1,6 +1,6 @@
 {
   "name": "electron-parent-child-window",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "test electron parent child window",
   "main": "main.js",
   "scripts": {
