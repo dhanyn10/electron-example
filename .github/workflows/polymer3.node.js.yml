@@ -25,11 +25,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: install package
-      working-directory: ./polymer3
+      working-directory: ./polymer-3
       run: npm install
     - name: build polymer3
-      working-directory: ./polymer3
+      working-directory: ./polymer-3
       run: polymer build
     - name: npm install build polymer3
-      working-directory: ./polymer3/build/es6-bundled
+      working-directory: ./polymer-3/build/es6-bundled
       run: npm install --only=prod
