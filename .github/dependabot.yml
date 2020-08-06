@@ -5,6 +5,7 @@ updates:
   directory: "/open-all-link-to-default-browser"
   directory: "/open-directory"
   directory: "/parent-child-window"
+  directory: "/polymer-3"
   directory: "/shelljs-command"
   directory: "/vue-bootstrap"
   schedule:
