@@ -29,7 +29,7 @@ jobs:
       run: npm install
     - name: build polymer3
       working-directory: ./polymer-3
-      run: polymer build
+      run: npm run polymer-build
     - name: npm install build polymer3
       working-directory: ./polymer-3/build/es6-bundled
       run: npm install --only=prod
