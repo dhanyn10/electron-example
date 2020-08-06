@@ -27,3 +27,8 @@ jobs:
     - name: install package
       working-directory: ./polymer3
       run: npm install
+    - name: build polymer3
+      run: polymer build
+    - name: npm install build polymer
+      working-directory: ./build/es6-bundled
+      run: npm install --only=prod
