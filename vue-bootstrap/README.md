@@ -1,7 +1,6 @@
 # electron-vue
 
-follow tutorial from link below:
+to run this application, use command below:
+```bash
+npm run electron:serve
 ```
-https://github.com/nklayman/vue-cli-plugin-electron-builder
-```
-to run this vue based app with electron
