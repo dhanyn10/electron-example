@@ -4,7 +4,11 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build-test": "electron-builder --publish=never"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
