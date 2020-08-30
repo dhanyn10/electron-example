@@ -2,6 +2,7 @@
 This is collection of very minimal application made with Electron Quick Start to test Electron Apps.
 
 ![bootbox](https://github.com/dhanyn10/electron-example/workflows/bootbox/badge.svg)  
+![menuitem](https://github.com/dhanyn10/electron-example/workflows/menuitem/badge.svg)  
 ![open-all-link-to-default-browser](https://github.com/dhanyn10/electron-example/workflows/open-all-link-to-default-browser/badge.svg)  
 ![open-directory](https://github.com/dhanyn10/electron-example/workflows/open-directory/badge.svg)  
 ![parent-child-window](https://github.com/dhanyn10/electron-example/workflows/parent-child-window/badge.svg)  
