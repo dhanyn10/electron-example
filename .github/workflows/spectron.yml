@@ -27,9 +27,6 @@ jobs:
     - name: install package
       working-directory: ./testing-spectron
       run: npm install
-    - name: run build testing
-      working-directory: ./testing-spectron
-      run: npm run build-test
     - name: run spectron testing
       working-directory: ./testing-spectron
       run: npm test
