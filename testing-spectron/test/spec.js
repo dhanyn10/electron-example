@@ -25,7 +25,7 @@ describe('Application launch', function(){
     //simple checking if application is showing 1 diplay
     it('shows an initial window', function(){
         return this.app.client.getWindowCount().then(function(count){
-            assert.strictEqual(count, 1)
+            assert.equal(count, 1)
         })
     })
 })
