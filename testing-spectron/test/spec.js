@@ -1,8 +1,9 @@
 const Application  = require('spectron').Application
 const assert = require('assert')
-const { app } = require('electron')
 const electronPath = require('electron')
 const path = require('path')
+const exec = require('child_process').exec
+const appPath = path.resolve(__dirname, '../main.js');
 
 describe('Application launch', function(){
     this.timeout(10000)
@@ -19,7 +20,9 @@ describe('Application launch', function(){
 
         if(this.app && this.app.isRunning())
         {
-            return this.app.stop()
+            this.app.stop().then(() => {
+                exec(`pkill -f "${appPath}"`); // based off of arguments passed to node
+            })
         }
     })
 
