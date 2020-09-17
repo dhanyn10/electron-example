@@ -4,7 +4,7 @@ const electronPath = require('electron')
 const path = require('path')
 
 describe('Application launch', function(){
-
+    
     beforeEach(function(){
         this.app = new Application({
             path: electronPath,
@@ -16,9 +16,7 @@ describe('Application launch', function(){
     afterEach(function(){
         if(this.app && this.app.isRunning())
         {
-            setTimeout(()=>{
-                this.app.stop()   
-            }, 3000)
+            this.app.stop()
         }
     })
 
