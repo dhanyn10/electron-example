@@ -6,7 +6,6 @@ const exec = require('child_process').exec
 const appPath = path.resolve(__dirname, '../main.js');
 
 describe('Application launch', function(){
-    this.timeout(10000)
     
     beforeEach(function(){
         this.app = new Application({
