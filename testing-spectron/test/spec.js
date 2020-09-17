@@ -5,7 +5,8 @@ const electronPath = require('electron')
 const path = require('path')
 
 describe('Application launch', function(){
-
+    this.timeout(10000)
+    
     beforeEach(function(){
         this.app = new Application({
             path: electronPath,
@@ -16,7 +17,7 @@ describe('Application launch', function(){
 
     afterEach(function(){
 
-        if(this.app.isRunning())
+        if(this.app && this.app.isRunning())
         {
             return this.app.stop()
         }
@@ -25,7 +26,7 @@ describe('Application launch', function(){
     //simple checking if application is showing 1 diplay
     it('shows an initial window', function(){
         return this.app.client.getWindowCount().then(function(count){
-            assert.equal(count, 1)
+            assert.strictEqual(count, 1)
         })
     })
 })
