@@ -9,9 +9,7 @@ describe('Application launch', function(){
     beforeEach(function(){
         this.app = new Application({
             path: electronPath,
-            args: [path.join(__dirname, '..')],
-            waitTimeout: 10000,
-            startTimeout: 10000
+            args: [path.join(__dirname, '..')]
         })
         return this.app.start()
     })
@@ -20,10 +18,7 @@ describe('Application launch', function(){
 
         if(this.app.isRunning())
         {
-            this.app.stop()
-            setTimeout(() => {
-                console.log(this.app)
-            }, 10000);
+            return this.app.stop()
         }
     })
 
