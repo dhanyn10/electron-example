@@ -30,6 +30,3 @@ jobs:
     - name: run spectron testing
       working-directory: ./testing-spectron
       run: npm test
-    - name: close terminal
-      working-directory: ./testing-spectron
-      run: exit

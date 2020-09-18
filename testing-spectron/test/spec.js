@@ -20,7 +20,7 @@ describe('Application launch', function(){
         if(this.app && this.app.isRunning())
         {
             this.app.stop().then(() => {
-                exec(`pkill -f "${appPath}"`); // based off of arguments passed to node
+                exec(`exit"`); // based off of arguments passed to node
             })
         }
     })
