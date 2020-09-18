@@ -10,7 +10,8 @@ describe('Application launch', function(){
     beforeEach(function(){
         this.app = new Application({
             path: electronPath,
-            args: [path.join(__dirname, '..')]
+            args: [path.join(__dirname, '..')],
+            chromeDriverArgs: "–remote-debugging-port=12209"
         })
         return this.app.start()
     })
@@ -19,9 +20,7 @@ describe('Application launch', function(){
 
         if(this.app && this.app.isRunning())
         {
-            this.app.stop().then(() => {
-                exec(`exit"`); // based off of arguments passed to node
-            })
+            return this.app.stop()
         }
     })
 
