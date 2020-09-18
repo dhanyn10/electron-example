@@ -11,7 +11,7 @@ describe('Application launch', function(){
         this.app = new Application({
             path: electronPath,
             args: [path.join(__dirname, '..')],
-            chromeDriverArgs: "–remote-debugging-port=12209"
+            chromeDriverArgs: ['remote-debugging-port=' + Math.floor(Math.random() * (9999 - 9000) + 9000)],
         })
         return this.app.start()
     })
