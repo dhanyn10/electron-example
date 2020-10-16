@@ -2,6 +2,7 @@ version: 2
 updates:
 - package-ecosystem: npm
   directory: "/bootbox"
+  directory: "/gdrive"
   directory: "/open-all-link-to-default-browser"
   directory: "/open-directory"
   directory: "/parent-child-window"
