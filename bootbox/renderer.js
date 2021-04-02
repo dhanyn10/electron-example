@@ -3,12 +3,12 @@
 // All of the Node.js APIs are available in this process.
 
 //simple alert
-$("#button-test").click(function(){
-    bootbox.alert('button is clicked');
+document.getElementById('button-test').addEventListener('click', () => {
+    bootbox.alert('button is clicked')
 });
 
 //alert with displaying input
-$("#button-test2").click(function(){
-    form_input = $("#form-input").val();
-    bootbox.alert('your input is : '+ form_input );
-});
+document.getElementById('button-test2').addEventListener('click', () => {
+    form_input = document.getElementById('form-input').value
+    bootbox.alert('your input is : '+ form_input )
+})
