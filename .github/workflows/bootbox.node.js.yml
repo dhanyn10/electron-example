@@ -27,6 +27,3 @@ jobs:
     - name: install package
       working-directory: ./bootbox
       run: npm install
-    - name: run build testing
-      working-directory: ./bootbox
-      run: npm run build-test

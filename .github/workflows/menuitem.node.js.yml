@@ -27,6 +27,3 @@ jobs:
     - name: install package
       working-directory: ./menuitem
       run: npm install
-    - name: run build testing
-      working-directory: ./menuitem
-      run: npm run build-test
