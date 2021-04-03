@@ -4,11 +4,7 @@
   "description": "test electron parent child window",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "postinstall": "electron-builder install-app-deps",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "build-test": "electron-builder --publish=never"
+    "start": "electron ."
   },
   "repository": "https://github.com/dhanyn10/electron-example",
   "keywords": [
@@ -19,8 +15,7 @@
   "author": "Dhany Nurdiansyah",
   "license": "MIT",
   "devDependencies": {
-    "electron": "9.1.0",
-    "electron-builder": "^22.8.0"
+    "electron": "^12.0.2"
   },
   "dependencies": {
     "electron-modal": "^1.0.0"

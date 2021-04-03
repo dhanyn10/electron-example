@@ -24,6 +24,3 @@ jobs:
     - name: install package
       working-directory: ./parent-child-window
       run: npm install
-    - name: run build testing
-      working-directory: ./parent-child-window
-      run: npm run build-test
