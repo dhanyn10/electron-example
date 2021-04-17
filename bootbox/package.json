@@ -4,7 +4,27 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder build"
+  },
+  "build": {
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "deb"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    }
   },
   "repository": "https://github.com/dhanyn10/electron-example",
   "keywords": [
@@ -17,7 +37,8 @@
   "author": "Dhany Nurdiansyah",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^12.0.2"
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.4"
   },
   "dependencies": {
     "bootbox": "^5.4.0",
