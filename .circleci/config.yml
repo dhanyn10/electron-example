@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/bootbox
+    working_directory: ~/electron-example/bootbox
     docker:
       - image: circleci/node:11-browsers
     steps:
