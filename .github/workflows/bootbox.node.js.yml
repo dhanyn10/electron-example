@@ -27,6 +27,3 @@ jobs:
     - name: install package
       working-directory: ./bootbox
       run: npm install
-    - name: spectron testing
-      working-directory: ./bootbox
-      run: npm run test
