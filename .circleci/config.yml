@@ -1,14 +1,27 @@
-version: 2.1
+version: 2
 jobs:
-  build:
-    working_directory: ~/electron-example
+  shellcheck:
     docker:
-      - image: circleci/node:11-browsers
+      - image: koalaman/shellcheck-alpine:stable
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
       - run:
-        name: check list
-        command: "ls"
+          name: Check Scripts
+          command: |
+            ls
+# jobs:
+#   build:
+#     working_directory: ~/electron-example
+#     docker:
+#       - image: circleci/node:11-browsers
+#     steps:
+#       - checkout
+#       - run:
+#         name: check list
+#         command: "ls"
       # - run:
       #     name: Update NPM
       #     command: "sudo npm install -g npm"
