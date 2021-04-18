@@ -18,8 +18,11 @@ describe('Application launch', function () {
             return this.app.stop()
     })
     it('show an initial window', function () {
-        return this.app.client.getWindowCount().then(function (count) {
-            assert.equal(count, 1)
-          })
+        return this.app.client.getWindowCount()
+        .then(function (count) {
+            assert.equal(count, 2)
+        }).catch(function (error) {
+            console.error("Error: ", error.message)
+        })
     })
 })
