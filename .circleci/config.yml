@@ -12,7 +12,9 @@ jobs:
           command: "sudo npm install -g npm"   
       - run:
           name: Install Dependencies
+          working_directory: ~/electron-example/bootbox
           command: npm install
-      # - run:
-      #     name: Run tests
-      #     command: npm run test
+      - run:
+          name: Run tests
+          working_directory: ~/electron-example/bootbox
+          command: npm run test
