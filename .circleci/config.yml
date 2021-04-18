@@ -2,7 +2,7 @@ version: 2.1
       
 jobs:
   build:
-    working_directory: ~/electron-example
+    # working_directory: ~/electron-example
     docker:
       - image: circleci/node:11-browsers
     steps:
