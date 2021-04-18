@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
         name: check list
-        command: ls
+        command: "ls"
       # - run:
       #     name: Update NPM
       #     command: "sudo npm install -g npm"
