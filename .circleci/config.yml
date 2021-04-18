@@ -7,10 +7,10 @@ jobs:
       - image: circleci/node:11-browsers
     steps:
       - checkout
-      - run:
-          name: Update NPM
+      - node/install-packages:
+          cache-path: ~/electron-example/bootbox/node_modules
           working_directory: ~/electron-example/bootbox
-          command: "sudo npm install -g npm"
+          override-ci-command: npm install
       - run:
           name: list
           working_directory: ~/electron-example/bootbox
