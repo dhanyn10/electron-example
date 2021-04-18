@@ -6,11 +6,13 @@ jobs:
     docker:
       - image: circleci/node:11-browsers
     steps:
-      - checkout:
-        path: ~/electtron-example
+      - checkout
       - run:
           name: Update NPM
           command: "sudo npm install -g npm"
+      - run:
+          name: list
+          command: "ls"
       # - restore_cache:
       #     key: dependency-cache-{{ checksum "package-lock.json" }}
       # - run:
