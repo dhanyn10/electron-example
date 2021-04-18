@@ -8,13 +8,14 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Update NPM
-          command: "sudo npm install -g npm"
+        name: Update NPM
+        command: "sudo npm install -g npm"
       - run:
-          name: list
-          command: "ls"
-      # - restore_cache:
-      #     key: dependency-cache-{{ checksum "package-lock.json" }}
+        name: list
+        command: "ls"
+      - restore_cache:
+        working_directory: ~/electron-example/bootbox
+        key: dependency-cache-{{ checksum "package-lock.json" }}
       # - run:
       #     name: Install Dependencies
       #     command: npm install
