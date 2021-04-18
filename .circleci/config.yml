@@ -1,5 +1,5 @@
 version: 2.1
-
+      
 jobs:
   build:
     working_directory: ~/electron-example
@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Update NPM
           working_directory: ~/electron-example/bootbox
-          override-ci-command: npm install
+          command: npm install
       - run:
           name: list
           working_directory: ~/electron-example/bootbox
