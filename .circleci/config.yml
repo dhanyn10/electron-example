@@ -22,7 +22,7 @@ jobs:
       - save_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
           paths:
-            - ./node_modules
+            - ~/electron-example/bootbox/node_modules
       - run:
           name: Run tests
           working_directory: ~/electron-example/bootbox
