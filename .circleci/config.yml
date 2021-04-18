@@ -5,15 +5,16 @@ jobs:
     docker:
       - image: circleci/node:11-browsers
     steps:
-      - checkout:
-        path: ~/electron-example
+      - checkout
       - run:
           name: Update NPM
+          working_directory: ~/electron-example/bootbox
           command: "sudo npm install -g npm"
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
           name: Install Dependencies
+          working_directory: ~/electron-example/bootbox
           command: npm install
       - save_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
@@ -21,4 +22,5 @@ jobs:
             - ./node_modules
       - run:
           name: Run tests
+          working_directory: ~/electron-example/bootbox
           command: npm run test
