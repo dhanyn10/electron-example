@@ -1,5 +1,5 @@
 version: 2.1
-      
+
 jobs:
   build:
     working_directory: ~/electron-example
@@ -7,8 +7,8 @@ jobs:
       - image: circleci/node:11-browsers
     steps:
       - checkout
-      - node/install-packages:
-          cache-path: ~/electron-example/bootbox/node_modules
+      - run:
+          name: Update NPM
           working_directory: ~/electron-example/bootbox
           override-ci-command: npm install
       - run:
