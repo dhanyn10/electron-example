@@ -7,9 +7,10 @@ jobs:
       - image: circleci/node:11-browsers
     steps:
       - checkout
-      # - run:
-      #     name: Update NPM
-      #     command: "sudo npm install -g npm"
+      - run:
+          name: Update NPM
+          working_directory: ~/electron-example/bootbox
+          command: "sudo npm install"
       - run:
           name: list
           working_directory: ~/electron-example/bootbox
