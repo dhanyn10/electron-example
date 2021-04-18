@@ -12,6 +12,7 @@ jobs:
       #     command: "sudo npm install -g npm"
       - run:
           name: list
+          working_directory: ~/electron-example/bootbox
           command: "ls"
       # - restore_cache:
       #     key: dependency-cache-{{ checksum "package-lock.json" }}
