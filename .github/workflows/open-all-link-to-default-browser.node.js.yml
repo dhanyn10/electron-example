@@ -26,7 +26,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: install package
       working-directory: ./open-all-link-to-default-browser
-      run: npm install
-    - name: run build testing
-      working-directory: ./open-all-link-to-default-browser
-      run: npm run build-test
+      run: yarn install
