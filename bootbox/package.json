@@ -4,11 +4,7 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "postinstall": "electron-builder install-app-deps",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder build",
-    "test": "mocha"
+    "start": "electron ."
   },
   "build": {
     "win": {
@@ -38,10 +34,7 @@
   "author": "Dhany Nurdiansyah",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^11.4.3",
-    "electron-builder": "^22.10.4",
-    "mocha": "^8.3.2",
-    "spectron": "^13.0.0"
+    "electron": "^11.4.3"
   },
   "dependencies": {
     "bootbox": "^5.4.0",
